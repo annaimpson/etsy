@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>etsy</title>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <header>
+    <div class="container-fluid">
+      <div class="row">
+        <a href="https://www.etsy.com/?ref=lgo"><h1>Etsy</h1></a>
+        <div class="form-group input">
+          <input type="text" class="form-control" id="search">
+        </div>
+        <button type="search" class="btn btn-default search">Search</button>
+        <span class="glyphicon glyphicon-shopping-cart header-cart" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-user header-user" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-heart header-heart" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-home header-home" aria-hidden="true"></span>
+        <a href="https://www.etsy.com/sell?ref=hdr&from_page=https%3A%2F%2Fwww.etsy.com%2Fsearch"><h6 class="sell">Sell on Etsy</h6></a>
+      </div>
+      <div class="row">
+        <div class="header-nav">
+          <h6 class="cart">Cart</h6>
+          <h6>You</h6>
+          <h6>Favorites</h6>
+          <h6>Home</h6>
+        </div>
+      </div>
+      <div class="row">
+        <div class="big-categories">
+          <a href=""><h4 class="clothing">Clothing &amp; Accessories</h4></a>
+          <a href=""><h4>Jewelry</h4></a>
+          <a href=""><h4>Craft Supplies &amp; Tools</h4></a>
+          <a href=""><h4>Weddings</h4></a>
+          <a href=""><h4>Entertainment</h4></a>
+          <a href=""><h4>Home &amp; Living</h4></a>
+          <a href=""><h4>Kids &amp; Baby</h4></a>
+          <a href=""><h4>Vintage</h4></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <body>
+    <div class="background-color">
+      <div class="container">  <!-- beginning of container -->
+        <div class="row"> <!-- large row -->
+
+          <div class="sidebar">
+            <div class="col-md-4">
+              <div class="row">
+                <h4 class="results">Show results for:</h4>
+                <div class="all-categories">
+                  <h5 class="categories">All Categories</h5>
+                    <ul class="select-categories">
+                      <li>Craft Supplies &amp; Tools</li>
+                      <li>Accessories</li>
+                      <li>Home &amp; Living</li>
+                      <li>Clothing</li>
+                      <li>Jewelry</li>
+                      <li>Toys &amp; Games</li>
+                      <li>Bags &amp; Purses</li>
+                      <li>Art &amp; Collectibles</li>
+                      <li>Bath &amp; Beauty</li>
+                      <li>Paper &amp; Party Supplies</li>
+                      <li>Shoes</li>
+                      <li>Pet Supplies</li>
+                      <li>Books, Movies, &amp; Music</li>
+                      <li>Weddings</li>
+                      <li>Electronics &amp; Accessories</li>
+                    </ul>
+                  </div>
+              </div>
+
+
+              <div class="row">
+                <h5 class="refine">Refine your search</h5>
+                  <div class="refined-search-background">
+                    <h5 class="item-type">Item Type</h5>
+                      <form class="item-buttons">
+                        <input type="radio" name="item" value="All-Items" checked>All Items<br>
+                        <input type="radio" name="item" value="Handmade">Handmade<br>
+                        <input type="radio" name="item" value="Vintage">Vintage
+                      </form>
+                      <h5 class="price">Price ($)</h5>
+                        <form class="min">
+                          <input type="number" name="quantity" min="0" max="2000">
+                        </form>
+                        <h6 class="to">to</h6>
+                        <form class="max">
+                          <input type="number" name="quantity" min="0" max="10000">
+                        </form>
+                      <h5 class="color-filter">Filter by Color</h5>
+                        <span class="red"></span>
+                        <span class="orange"></span>
+                        <span class="yellow"></span>
+                        <span class= "green"></span>
+                        <span class= "blue"></span>
+                        <span class="purple"></span>
+                        <span class="black"></span>
+                        <span class="white"></span>
+                      <h5 class="ordering-options">Ordering Options</h5>
+                        <form action="ordering" method="get">
+                          <input type="checkbox" name="ordering" value="gift-card">Accepts Etsy Gift Cards<br>
+                          <input type="checkbox" name="ordering" value="custom" checked="checked">Customizable<br>
+                        </form>
+                      <h5 class="shop-location">Shop Location</h5>
+                      <form>
+                        <input type="radio" name="item" value="anywhere" checked>Anywhere<br>
+                        <input type="radio" name="item" value="US">United States
+                      </form>
+                      <h5 class="ship-to">Ship To</h5>
+                      <div class="bfh-selectbox bfh-countries" data-country="US" data-flags="true">
+                        <input type="hidden" value="">
+                        <a class="bfh-selectbox-toggle" role="button" data-toggle="bfh-selectbox" href="#">
+                          <span class="bfh-selectbox-option input-medium" data-option=""></span>
+                          <b class="caret"></b>
+                        </a>
+                        <div class="bfh-selectbox-options">
+                          <input type="text" class="bfh-selectbox-filter">
+                          <div role="listbox">
+                          <ul role="option">
+                          </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div> <!-- end of large row -->
+      </div> <!-- end of container -->
+    </div>
+
+    <script src="js/bundle.js"></script>
+  </body>
+</html>
